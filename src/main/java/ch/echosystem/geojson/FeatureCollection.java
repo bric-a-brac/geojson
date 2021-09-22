@@ -40,4 +40,14 @@ public final class FeatureCollection<T extends Feature<?>> extends AbstractGeoJs
         {
         return pointsFromFile(Paths.get(path));
         }
+    
+    public static FeatureCollection<MultiPointFeature> multiPointsFromFile(final Path path) throws IOException
+        {
+        return fromFile(path, MultiPointFeature.class);
+        }
+    
+    public static FeatureCollection<MultiPointFeature> multiPointsFromFile(final String path) throws IOException
+        {
+        return multiPointsFromFile(Paths.get(path));
+        }
     }
