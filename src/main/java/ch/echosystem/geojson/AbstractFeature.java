@@ -13,6 +13,11 @@ public abstract class AbstractFeature<T extends Geometry<?>> extends AbstractGeo
 		return geometry;
 		}
 
+	public final String getName()
+		{
+		return properties.getOrDefault("name", null);
+		}
+	
 	@Override
 	public final Map<String, String> getProperties()
 		{

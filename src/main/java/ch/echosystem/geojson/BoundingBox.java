@@ -49,6 +49,7 @@ public final class BoundingBox
 			
 			});
 		
-		return bbox;
+		//return bbox;
+		throw new UnsupportedOperationException();
 		}
 	}
